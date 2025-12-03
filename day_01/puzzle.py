@@ -36,7 +36,7 @@ def get_password(rotations):
             if was_zero and value < 0:
                 p2 -= 1
 
-        # If rotation stops at multiple of 1000 rotations to the left must be discounted
+        # If rotation stops at multiple of 100, rotations to the left must be discounted
         # by one on the immediate rotation after this. Also, this is p1.
         if not (value % 100):
             was_zero = True
